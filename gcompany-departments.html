@@ -11,13 +11,13 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles-less.css" rel="stylesheet">
     <link href="css/styles-responsive.css" rel="stylesheet">
     <link href="css/effects.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/datepicker.css" rel="stylesheet">
     <link href="css/tables.css" rel="stylesheet">
     <link href="css/tables-responsive.css" rel="stylesheet">
-    <link href="css/styles-less.css" rel="stylesheet">
     <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -51,17 +51,24 @@
             </div><!-- leftSideMenu -->
             <div class="contentSection">
                 <div class="dataContainer">
-                    <div class="row-fluid">
-                        <div class="span6">
+                    <div class="row-fluid appheading">
+                        <div class="span7">
                             <h2 class="pull-left"><i class="fa fa-building-o icon"></i>G-Company</h2>
                             <h4 class="currentPageTitle">Company Departments</h4>
                             <div class="clear"></div><!-- clear -->
-                        </div><!-- span6 -->
-                        <div class="span6">
-                            <a href="#" class="btn-default btn-orange pull-right"><i class="fa fa-download"></i>User Guide</a>
-                            <a href="#" class="btn-default btn-green pull-right margin-right"><i class="fa fa-video-camera"></i>Video Tutorial</a>
+                        </div><!-- span7 -->
+                        <div class="span5">
+                            <div class="btnWrapper2">
+                                <div class="leftWrap">
+                                    <a href="#" class="btn-default btn-orange btn-guide"><i class="fa fa-download"></i>User Guide</a>        
+                                </div><!-- leftWrap -->
+                                <div class="rightWrap">
+                                    <a href="#" class="btn-default btn-green btn-guide"><i class="fa fa-video-camera"></i>Video Guide</a>
+                                </div><!-- rightWrap -->
+                                <div class="clear"></div><!-- clear -->
+                            </div><!-- btnWrapper2 -->
                             <div class="clear"></div><!-- clear -->
-                        </div><!-- span6 -->
+                        </div><!-- span5 -->
                         <div class="clear"></div><!-- clear -->
                     </div><!-- row-fluid -->
 
@@ -76,40 +83,46 @@
                                 </form>
                             </div><!-- span6 -->
                             <div class="span3">
-                                    <input type="button" class="btn-newdep btn-default btn-blue btn-medium align-texbox max-width btn-toggle" rel="newdepartment" value="New Department">
+                                <button type="button" class="btn-newdep btn-default btn-blue btn-medium align-textbox max-width btn-toggle" rel="newdepartment"><i class="fa fa-plus"></i>Department</button>
                             </div><!-- span3 -->
                             <div class="clear"></div><!-- clear -->
                         </div><!-- row-fluid -->
                     </div><!-- form_container -->
 
                     <div id="newdepartment" class="hide">
-                        <h2>New Department</h2>
+                        <h2 class="subheading">New Department</h2>
                         <div class="form_container">
                             <form action="#" method="post">
                                 <div class="row-fluid">
                                     <div class="span6">
-                                        <label>Department Name</label>
-                                        <input type="text" name="departmentname" />
+                                        <div class="row-fluid">
+                                            <div class="span6">
+                                                <label>Department Name</label>
+                                                <input type="text" name="departmentname" />
+                                            </div><!-- span6 -->
+                                            <div class="span6">
+                                                <label>Active</label>
+                                                <select>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div><!-- span6 -->
+                                            <div class="clear"></div><!-- clear -->
+                                        </div><!--row-fluid-->
                                     </div><!-- span6 -->
                                     <div class="span6">
-                                        <label>Active</label>
-                                        <select>
-                                            <option value="1">Yes</option>
-                                            <option value="2">No</option>
-                                        </select>
+                                        <div class="btnWrapper2">
+                                            <div class="leftWrap">
+                                                <input type="button" value="Save" class="btn-medium align-textbox btn-default btn-blue"/>
+                                            </div><!-- leftWrap -->
+                                            <div class="rightWrap">
+                                                <input type="button" value="Cancel" rel="newdepartment" class="btn-medium align-textbox btn-toggle-close btn-default btn-red"/>
+                                            </div><!-- rightWrap -->
+                                            <div class="clear"></div><!-- clear -->
+                                        </div><!-- btnwrapper2 -->
                                     </div><!-- span6 -->
                                     <div class="clear"></div><!-- clear -->
                                 </div><!-- row-fluid -->
-                                <div class="btnWrapper2 pull-right">
-                                    <div class="leftWrap">
-                                        <input type="button" value="Save" class="btn-default btn-blue"/>
-                                    </div><!-- leftWrap -->
-                                    <div class="rightWrap">
-                                        <input type="button" value="Cancel" rel="newdepartment" class="btn-toggle-close btn-default btn-red"/>
-                                    </div><!-- rightWrap -->
-                                    <div class="clear"></div><!-- clear -->
-                                </div><!-- btnwrapper2 -->
-                                <div class="clear"></div><!-- clear -->
                             </form>
                         </div><!-- form_container -->
                     </div><!-- newdepartment -->
