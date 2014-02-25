@@ -1,0 +1,68 @@
+/* form container */
+@desktop:   ~"only screen and (min-width: 960px) and (max-width: 1199px)";
+@mobile_landscape:	~"only screen and (min-width: 321px) and (max-width: 479px)";
+@mobile_portrait:	~"only screen and (max-width: 320px)";
+
+
+.btn-default{
+	&.btn-blue{
+		background: #006696;
+		border: 1px solid #005c88;
+		text-shadow: -1px -1px 0px #005c88;
+		min-width: 120px;
+
+		&:focus,
+		&:hover{
+			color: #fff;
+			background: #015a84;
+			border: 1px solid #014f73;
+			text-shadow: -1px -1px 0px #014f73;
+		}
+	}
+	&.btn-medium{
+		padding-top: 8px!important;
+		padding-bottom: 9px!important;
+
+		&.align-texbox{
+			margin-top: 23px!important;
+		}
+	}
+	&.max-width{
+		width: 100%;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
+.btnWrapper2{
+	max-width: 320px;
+
+	@media @mobile_portrait{
+		float: none;
+		width: 100%;
+	}
+	.leftWrap{
+		float: left;
+		width: 47.5%;
+		clear: left;
+	}
+	.rightWrap{
+		float: right;
+		width: 47.5%;
+		clear: right;
+	}
+	.btn-default{
+		padding-right: 20px!important;
+		padding-left: 20px!important;
+		width: auto;
+		max-width: 100%;
+		min-width: 10px;
+
+		@media @mobile_portrait{
+			float: none!important;
+			width: 100%!important;
+			padding-right: 0px!important;
+			padding-left: 0px!important;
+		}
+	}
+}
