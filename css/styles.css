@@ -2198,3 +2198,84 @@ ul.pagination li a.controls{
     padding: 0 0 10px 0;
 }
 
+
+/*********** elme *************/
+
+select {
+	-webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+    height: 40px;
+}  
+
+@-moz-document url-prefix() {
+  select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: "";
+    height: 40px;
+  }
+}
+
+.nav-tabs-custom {
+	margin-bottom: -1px;
+	border-bottom: 0;
+}
+
+.nav-tabs-custom > li > a {
+	color: #777;
+}
+
+.nav-tabs > li a:hover {
+	background-color: transparent;	
+}
+
+.nav-tabs-custom > .active a,
+.nav-tabs-custom > .active > a:hover,
+.nav-tabs-custom > .active > a:focus{
+	outline: none;
+	background-color: #f8f6f1;
+}
+
+.tab-content {
+	width: 100%;
+}
+
+.tab-pane > label {
+	display: block;
+	padding: 0 0 5px 0;
+	margin: 0 0 0 0;
+	font-size: 13px;
+	color: #333333;
+	line-height: normal;
+}
+
+.table-nostyle td{
+	border-top: 0;
+}
+
+/* table */
+
+
+.icon-position {
+	position: absolute;
+	right: 4px;
+	top: 31px;
+	padding: 1px 4px;
+	border: 1px solid #bfbfbf;
+	border-radius: 3px;
+	text-align: center;
+	color: #bfbfbf;
+}
+
+.icon-position-normal {
+	top: 10px;
+}
+
+/* utilities */
+
+.rel {
+	position: relative;
+}
