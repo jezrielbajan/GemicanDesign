@@ -18,6 +18,7 @@
     <link href="css/datepicker.css" rel="stylesheet">
     <link href="css/tables.css" rel="stylesheet">
     <link href="css/tables-responsive.css" rel="stylesheet">
+    <link href="css/tables-responsive-less.css" rel="stylesheet">
     <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -54,7 +55,7 @@
                     <div class="row-fluid appheading">
                         <div class="span7">
                             <h2 class="pull-left"><i class="fa fa-building-o icon"></i>G-Company</h2>
-                            <h4 class="currentPageTitle">Employee Information</h4>
+                            <h4 class="currentPageTitle">Contact Type</h4>
                             <div class="clear"></div><!-- clear -->
                         </div><!-- span7 -->
                         <div class="span5">
@@ -74,57 +75,61 @@
 
                     <div class="form_container">
                         <div class="row-fluid">
-                            <div class="span9 search">
-                                <form action="#" method="post">
-                                    <label>Find Employee</label>
-                                    <input type="text" name="searhkey" />
-                                    <button type="submit" class="btn-default">Find</button>
-                                    <div class="clear"></div><!-- clear -->
-                                </form>
-                            </div><!-- span6 -->
-                            <div class="span3 showpage">
-                                <form action="#" method="post">
-                                    <label>Show Per Page</label>
-                                    <input type="text" name="searhkey" placeholder="10"/>
-                                    <button type="submit" class="btn-default">Display</button>
-                                    <div class="clear"></div><!-- clear -->
-                                </form>
-                            </div><!-- span3 -->
-                            <div class="clear"></div><!-- clear -->
+                            <form action="#" method="post">
+                                <div class="span6">
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <label>Contact Type</label>
+                                            <input type="text" name="contacttype" />
+                                        </div><!-- span6 -->
+                                        <div class="span6">
+                                            <label>Active</label>
+                                            <select>
+                                                <option value="0">Active</option>
+                                                <option value="1">Suspended</option>
+                                                <option value="2">Terminated</option>
+                                            </select>
+                                        </div><!-- span6 -->
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!--row-fluid-->
+                                </div><!-- span6 -->
+                                <div class="span6">
+                                    <div class="btnWrapper2">
+                                        <div class="leftWrap">
+                                            <input type="button" value="Save" class="btn-medium align-textbox btn-default btn-blue"/>
+                                        </div><!-- leftWrap -->
+                                        <div class="rightWrap">
+                                            <input type="button" value="New" class="btn-medium align-textbox btn-default btn-blue"/>
+                                        </div><!-- rightWrap -->
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!-- btnwrapper2 -->
+                                </div><!-- span6 -->
+                                <div class="clear"></div><!-- clear -->
+                            </form>
                         </div><!-- row-fluid -->
                     </div><!-- form_container -->
 
-                    <div class="gtable" id="gtable-employees">
+                    <div class="gtable" id="gtable-usertype">
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr class="gtable-row gtable-heading">
                                 <td class="gtable-cell col1">
                                     <div class="gtable-cell-inner">
-                                        <span>name</span>
+                                        <span>contact type</span>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                                 <td class="gtable-cell col2">
                                     <div class="gtable-cell-inner">
-                                        <span>cellphone</span>
+                                        <span>last modified date</span>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                                 <td class="gtable-cell col3">
                                     <div class="gtable-cell-inner">
-                                        <span>email</span>
+                                        <span>active</span>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                                 <td class="gtable-cell col4">
                                     <div class="gtable-cell-inner">
-                                        <span>user type</span>
-                                    </div><!-- gtable-cell-inner -->
-                                </td>
-                                <td class="gtable-cell col5">
-                                    <div class="gtable-cell-inner">
-                                        <span>status</span>
-                                    </div><!-- gtable-cell-inner -->
-                                </td>
-                                <td class="gtable-cell col6">
-                                    <div class="gtable-cell-inner">
-                                        <span>more info.</span>
+                                        <span>Options</span>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                             </tr>
@@ -132,36 +137,26 @@
                             <tr class="gtable-row">
                                 <td class="gtable-cell col1">
                                     <div class="gtable-cell-inner">
-                                        <a href="#">Millan, Michael A.</a>
+                                        <span>Contact Type</span>
                                         <div class="moreDetailsContainer dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                 <i class="fa fa-angle-down"></i>
                                             </a>
                                             <ul class="dropdown-menu pull-right">
                                                 <li class="colData col2">
-                                                    <span class="dataLabel">cellphone</span>
-                                                    <span class="dataInfo">+639156659964</span>
+                                                    <span class="dataLabel">Last modified date</span>
+                                                    <span class="dataInfo">Wednesday, February 26, 2014</span>
+                                                    <div class="clear"></div><!-- clear -->
                                                 </li>
                                                 <li class="colData col3">
-                                                    <span class="dataLabel">email</span>
-                                                    <a href="mailto:michaelmillanmyemail@email.com">michaelmillanmyemail@email.com</a>
+                                                    <span class="dataLabel">Active</span>
+                                                    <span class="dataInfo">Active</span>
+                                                    <div class="clear"></div><!-- clear -->
                                                 </li>
                                                 <li class="colData col4">
-                                                    <span class="dataLabel">user type</span>
-                                                    <span class="dataInfo">Full Access</span>
-                                                    <div class="clear"></div><!-- clear -->
-                                                </li>
-                                                <li class="colData col5">
-                                                    <span class="dataLabel">status</span>
-                                                    <span class="dataInfo">Suspended</span>
-                                                    <div class="clear"></div><!-- clear -->
-                                                </li>
-                                                <li class="colData col6">
-                                                    <span class="dataLabel">more info.</span>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-user"></i> Profile</a>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-dollar"></i> Payroll</a>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-clock-o"></i> Shift</a>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-envelope"></i> Personal Messages</a>
+                                                    <span class="dataLabel">Options</span>
+                                                    <a href="#" class="dataOptions"><i class="fa fa-pencil-square-o"></i>Edit</a>
+                                                    <a href="#" class="dataOptions"><i class="fa fa-trash-o"></i>Delete</a>
                                                     <div class="clear"></div><!-- clear -->
                                                 </li>
                                             </ul>
@@ -170,30 +165,18 @@
                                 </td>
                                 <td class="gtable-cell col2">
                                     <div class="gtable-cell-inner">
-                                        <span>+639156659964</span>
+                                        <span>Wednesday, February 26, 2014</span>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                                 <td class="gtable-cell col3">
                                     <div class="gtable-cell-inner">
-                                        <a href="mailto:michaelmillanmyemail@email.com">michaelmillanmyemail@email.com</a>
+                                        <span>Active</span>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                                 <td class="gtable-cell col4">
                                     <div class="gtable-cell-inner">
-                                        <span>Full Access</span>
-                                    </div><!-- gtable-cell-inner -->
-                                </td>
-                                <td class="gtable-cell col5">
-                                    <div class="gtable-cell-inner">
-                                        <span>Suspended</span>
-                                    </div><!-- gtable-cell-inner -->
-                                </td>
-                                <td class="gtable-cell col6">
-                                    <div class="gtable-cell-inner">
-                                        <a href="#" title="Profile"><i class="fa fa-user"></i></a>
-                                        <a href="#" title="Payroll"><i class="fa fa-dollar"></i></a>
-                                        <a href="#" title="Shift"><i class="fa fa-clock-o"></i></a>
-                                        <a href="#" title="Personal Messages"><i class="fa fa-envelope"></i></a>
+                                        <a href="#" title="Edit"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                             </tr>
@@ -201,36 +184,26 @@
                             <tr class="gtable-row">
                                 <td class="gtable-cell col1">
                                     <div class="gtable-cell-inner">
-                                        <a href="#">Millan, Michael A.</a>
+                                        <span>Contact Type</span>
                                         <div class="moreDetailsContainer dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                 <i class="fa fa-angle-down"></i>
                                             </a>
                                             <ul class="dropdown-menu pull-right">
                                                 <li class="colData col2">
-                                                    <span class="dataLabel">cellphone</span>
-                                                    <span class="dataInfo">+639156659964</span>
+                                                    <span class="dataLabel">Last modified date</span>
+                                                    <span class="dataInfo">Wednesday, February 26, 2014</span>
+                                                    <div class="clear"></div><!-- clear -->
                                                 </li>
                                                 <li class="colData col3">
-                                                    <span class="dataLabel">email</span>
-                                                    <a href="mailto:michaelmillanmyemail@email.com">michaelmillanmyemail@email.com</a>
+                                                    <span class="dataLabel">Active</span>
+                                                    <span class="dataInfo">Active</span>
+                                                    <div class="clear"></div><!-- clear -->
                                                 </li>
                                                 <li class="colData col4">
-                                                    <span class="dataLabel">user type</span>
-                                                    <span class="dataInfo">Full Access</span>
-                                                    <div class="clear"></div><!-- clear -->
-                                                </li>
-                                                <li class="colData col5">
-                                                    <span class="dataLabel">status</span>
-                                                    <span class="dataInfo">Suspended</span>
-                                                    <div class="clear"></div><!-- clear -->
-                                                </li>
-                                                <li class="colData col6">
-                                                    <span class="dataLabel">more info.</span>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-user"></i> Profile</a>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-dollar"></i> Payroll</a>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-clock-o"></i> Shift</a>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-envelope"></i> Personal Messages</a>
+                                                    <span class="dataLabel">Options</span>
+                                                    <a href="#" class="dataOptions"><i class="fa fa-pencil-square-o"></i>Edit</a>
+                                                    <a href="#" class="dataOptions"><i class="fa fa-trash-o"></i>Delete</a>
                                                     <div class="clear"></div><!-- clear -->
                                                 </li>
                                             </ul>
@@ -239,30 +212,18 @@
                                 </td>
                                 <td class="gtable-cell col2">
                                     <div class="gtable-cell-inner">
-                                        <span>+639156659964</span>
+                                        <span>Wednesday, February 26, 2014</span>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                                 <td class="gtable-cell col3">
                                     <div class="gtable-cell-inner">
-                                        <a href="mailto:michaelmillanmyemail@email.com">michaelmillanmyemail@email.com</a>
+                                        <span>Active</span>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                                 <td class="gtable-cell col4">
                                     <div class="gtable-cell-inner">
-                                        <span>Full Access</span>
-                                    </div><!-- gtable-cell-inner -->
-                                </td>
-                                <td class="gtable-cell col5">
-                                    <div class="gtable-cell-inner">
-                                        <span>Suspended</span>
-                                    </div><!-- gtable-cell-inner -->
-                                </td>
-                                <td class="gtable-cell col6">
-                                    <div class="gtable-cell-inner">
-                                        <a href="#" title="Profile"><i class="fa fa-user"></i></a>
-                                        <a href="#" title="Payroll"><i class="fa fa-dollar"></i></a>
-                                        <a href="#" title="Shift"><i class="fa fa-clock-o"></i></a>
-                                        <a href="#" title="Personal Messages"><i class="fa fa-envelope"></i></a>
+                                        <a href="#" title="Edit"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                             </tr>
@@ -270,34 +231,26 @@
                             <tr class="gtable-row">
                                 <td class="gtable-cell col1">
                                     <div class="gtable-cell-inner">
-                                        <a href="#">Millan, Michael A.</a>
+                                        <span>Contact Type</span>
                                         <div class="moreDetailsContainer dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                 <i class="fa fa-angle-down"></i>
                                             </a>
                                             <ul class="dropdown-menu pull-right">
                                                 <li class="colData col2">
-                                                    <span class="dataLabel">cellphone</span>
-                                                    <span class="dataInfo">+639156659964</span>
+                                                    <span class="dataLabel">Last modified date</span>
+                                                    <span class="dataInfo">Wednesday, February 26, 2014</span>
+                                                    <div class="clear"></div><!-- clear -->
                                                 </li>
                                                 <li class="colData col3">
-                                                    <span class="dataLabel">email</span>
-                                                    <a href="mailto:michaelmillanmyemail@email.com">michaelmillanmyemail@email.com</a>
+                                                    <span class="dataLabel">Active</span>
+                                                    <span class="dataInfo">Active</span>
+                                                    <div class="clear"></div><!-- clear -->
                                                 </li>
                                                 <li class="colData col4">
-                                                    <span class="dataLabel">user type</span>
-                                                    <span class="dataInfo">Full Access</span>
-                                                </li>
-                                                <li class="colData col5">
-                                                    <span class="dataLabel">status</span>
-                                                    <span class="dataInfo">Suspended</span>
-                                                </li>
-                                                <li class="colData col6">
-                                                    <span class="dataLabel">more info.</span>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-user"></i> Profile</a>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-dollar"></i> Payroll</a>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-clock-o"></i> Shift</a>
-                                                    <a href="#" class="dataOptions"><i class="fa fa-envelope"></i> Personal Messages</a>
+                                                    <span class="dataLabel">Options</span>
+                                                    <a href="#" class="dataOptions"><i class="fa fa-pencil-square-o"></i>Edit</a>
+                                                    <a href="#" class="dataOptions"><i class="fa fa-trash-o"></i>Delete</a>
                                                     <div class="clear"></div><!-- clear -->
                                                 </li>
                                             </ul>
@@ -306,30 +259,18 @@
                                 </td>
                                 <td class="gtable-cell col2">
                                     <div class="gtable-cell-inner">
-                                        <span>+639156659964</span>
+                                        <span>Wednesday, February 26, 2014</span>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                                 <td class="gtable-cell col3">
                                     <div class="gtable-cell-inner">
-                                        <a href="mailto:michaelmillanmyemail@email.com">michaelmillanmyemail@email.com</a>
+                                        <span>Active</span>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                                 <td class="gtable-cell col4">
                                     <div class="gtable-cell-inner">
-                                        <span>Full Access</span>
-                                    </div><!-- gtable-cell-inner -->
-                                </td>
-                                <td class="gtable-cell col5">
-                                    <div class="gtable-cell-inner">
-                                        <span>Suspended</span>
-                                    </div><!-- gtable-cell-inner -->
-                                </td>
-                                <td class="gtable-cell col6">
-                                    <div class="gtable-cell-inner">
-                                        <a href="#" title="Profile"><i class="fa fa-user"></i></a>
-                                        <a href="#" title="Payroll"><i class="fa fa-dollar"></i></a>
-                                        <a href="#" title="Shift"><i class="fa fa-clock-o"></i></a>
-                                        <a href="#" title="Personal Messages"><i class="fa fa-envelope"></i></a>
+                                        <a href="#" title="Edit"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a href="#" title="Delete"><i class="fa fa-trash-o"></i></a>
                                     </div><!-- gtable-cell-inner -->
                                 </td>
                             </tr>
