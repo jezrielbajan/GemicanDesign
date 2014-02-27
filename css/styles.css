@@ -2252,8 +2252,22 @@ select::-ms-expand {
 	line-height: normal;
 }
 
+.leftside-menu li a:after{
+	content: "\f105";
+	float: right;
+	font-family: 'FontAwesome';
+}
+
 .table-nostyle td{
+	display: block;
 	border-top: 0;
+}
+
+
+.table-nostyle .radio input[type="radio"], 
+.checkbox input[type="checkbox"] {
+	float: left;
+	margin: 4px 10px 0;
 }
 
 /* table */
@@ -2266,6 +2280,7 @@ select::-ms-expand {
 	padding: 1px 4px;
 	border: 1px solid #bfbfbf;
 	border-radius: 3px;
+	background: transparent;
 	text-align: center;
 	color: #bfbfbf;
 }
@@ -2278,4 +2293,8 @@ select::-ms-expand {
 
 .rel {
 	position: relative;
+}
+
+.mM-top {
+	margin-top: 20px;
 }
