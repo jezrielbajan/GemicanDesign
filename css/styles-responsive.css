@@ -344,6 +344,9 @@
       padding-right: 0px!important;
       padding-left: 0px!important;
     }
+    .btn-newdep.btn-default.btn-medium.align-texbox{
+      margin-top: 10px!important;
+    }
   }
   @media only screen and (min-width: 480px) and (max-width: 599px){
     #screen3.responsiveInfo{
@@ -502,6 +505,9 @@
       width: 100%;
       padding-right: 0px!important;
       padding-left: 0px!important;
+    }
+    .btn-newdep.btn-default.btn-medium.align-texbox{
+      margin-top: 10px!important;
     }
   }
   @media only screen and (min-width: 321px) and (max-width: 479px){
@@ -704,6 +710,9 @@
       padding-right: 0px!important;
       padding-left: 0px!important;
     }
+    .btn-newdep.btn-default.btn-medium.align-texbox{
+      margin-top: 10px!important;
+    }
   }
   @media only screen and (max-width: 320px){
     #screen1.responsiveInfo{
@@ -905,6 +914,9 @@
       width: 100%;
       padding-right: 0px!important;
       padding-left: 0px!important;
+    }
+    .btn-newdep.btn-default.btn-medium.align-texbox{
+      margin-top: 10px!important;
     }
   }
 

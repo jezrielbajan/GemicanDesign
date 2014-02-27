@@ -1,0 +1,150 @@
+/* form container */
+@screenview_min31349:	~"only screen and (min-width: 1349px)";
+@screenview_min1200:	~"only screen and (min-width: 1200px) and (max-width: 1348px)";
+@screenview_min1024:	~"only screen and (min-width: 1024px) and (max-width: 1199px)";
+@screenview_min768:		~"only screen and (min-width: 768px) and (max-width: 1023px)";
+@screenview_min600:		~"only screen and (min-width: 600px) and (max-width: 767px)";
+@screenview_min480:		~"only screen and (min-width: 480px) and (max-width: 599px)";
+@screenview_min321:		~"only screen and (min-width: 321px) and (max-width: 479px)";
+@screenview_max320:		~"only screen and (max-width: 320px)";
+
+
+.btn-default{
+	&.btn-blue{
+		background: #006696;
+		border: 1px solid #005c88;
+		text-shadow: -1px -1px 0px #005c88;
+		min-width: 120px;
+
+		&:focus,
+		&:hover{
+			color: #fff;
+			background: #015a84;
+			border: 1px solid #014f73;
+			text-shadow: -1px -1px 0px #014f73;
+		}
+	}
+	&.btn-medium{
+		padding-top: 8px!important;
+		padding-bottom: 9px!important;
+
+		&.align-textbox{
+			margin-top: 23px!important;
+		}
+	}
+	&.max-width{
+		width: 100%!important;
+		padding-right: 0px!important;
+		padding-left: 0px!important;
+		min-width: 10px;
+	}
+}
+
+.btnWrapper2{
+	@media @screenview_min600{
+		float: none;
+		width: 100%;
+		max-width: 100%;
+	}
+	@media @screenview_min480{
+		float: none;
+		width: 100%;
+		max-width: 100%;
+	}
+	@media @screenview_min321{
+		float: none;
+		width: 100%;
+		max-width: 100%;
+	}
+	@media @screenview_max320{
+		float: none;
+		width: 100%;
+		max-width: 100%;
+	}
+	.leftWrap{
+		float: left;
+		width: 47.5%;
+		clear: left;
+	}
+	.rightWrap{
+		float: right;
+		width: 47.5%;
+		clear: right;
+	}
+	.btn-default{
+		padding-right: 0px!important;
+		padding-left: 0px!important;
+		margin-right: 0px!important;
+		margin-left: 0px!important;
+		width: 100%;
+		max-width: 100%;
+		min-width: 10px;
+
+		@media @screenview_min600{
+			float: none!important;
+			width: 100%!important;
+			padding-right: 0px!important;
+			padding-left: 0px!important;
+		}
+		@media @screenview_min480{
+			float: none!important;
+			width: 100%!important;
+			padding-right: 0px!important;
+			padding-left: 0px!important;
+		}
+		@media @screenview_min321{
+			float: none!important;
+			width: 100%!important;
+			padding-right: 0px!important;
+			padding-left: 0px!important;
+		}
+		@media @screenview_max320{
+			float: none!important;
+			width: 100%!important;
+			padding-right: 0px!important;
+			padding-left: 0px!important;
+		}
+		&.btn-guide{
+			margin-bottom: 0px!important;
+
+			@media @screenview_min600{
+				margin-top: 20px;
+			}
+			@media @screenview_min480{
+				margin-top: 20px;
+			}
+			@media @screenview_min321{
+				margin-top: 20px;
+			}
+			@media @screenview_max320{
+				margin-top: 20px;
+			}
+		}
+	}
+	&.pull-left,
+	&.pull-right{
+		min-width: 320px;
+
+		@media @screenview_min480{
+			min-width: 10px;
+		}
+		@media @screenview_min321{
+			min-width: 10px;
+		}
+		@media @screenview_max320{
+			min-width: 10px;
+		}
+	}
+}
+.appheading{
+	border-bottom: 1px solid #ddd;
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
+}
+.dataContainer{
+	.subheading{
+		padding: 0 0 20px 0!important;
+		margin: 0 0 0 0!important;
+		line-height: normal!important;	
+	}
+}

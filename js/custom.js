@@ -146,6 +146,17 @@ $(document).ready(function(){
 
 	/* ----------------------------------------------------------- */
 
+	$(".btn-toggle").click(function(){
+		var relkey = $(this).attr("rel");
+		$("#" + relkey).slideToggle("fast");
+	});
+	$(".btn-toggle-close").click(function(){
+		var relkey = $(this).attr("rel");
+		$("#" + relkey).slideUp("fast");
+	});
+
+	/* ----------------------------------------------------------- */
+
     /* date pickers */
     $("#bday_datepicker, #date_hired").datepicker();
 });
