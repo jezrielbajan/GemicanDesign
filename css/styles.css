@@ -259,7 +259,7 @@ form{
 	margin-left: -8px;
 }
 .nicescroll-rails > div{
-	opacity: 0.2;
+	opacity: 0.5;
 }
 
 
@@ -315,7 +315,7 @@ form{
 }
 
 
-/* login Form */
+/* login Form 
 #loginForm .formWrapper{
 	max-width: 600px;
 	margin: 0 auto 0 auto;
@@ -384,7 +384,7 @@ form{
 	padding: 0 0 0 0;
 	margin: 0 0 5px 0;
 }
-
+*/
 
 /* header */
 header{
