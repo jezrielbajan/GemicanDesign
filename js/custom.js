@@ -36,6 +36,8 @@ $(document).ready(function(){
 		$(".signuplogin").slideUp(function(){
 			$("#signupForm").hide();
 			$(".backdrop_form").fadeOut();
+			$(".tabs_signupform").hide();
+			$("#user_signupform").show();
 		});
 	});
 
@@ -153,6 +155,20 @@ $(document).ready(function(){
 	$(".btn-toggle-close").click(function(){
 		var relkey = $(this).attr("rel");
 		$("#" + relkey).slideUp("fast");
+	});
+
+	/* ----------------------------------------------------------- */
+
+	/* signup (USER) form actions */
+	$(".btn-nextform").click(function(){
+		var relkey = $(this).attr("rel");
+		$(".tabs_signupform").hide();
+		$("#" + relkey).fadeIn();
+	});
+	$(".btn-prevform").click(function(){
+		var relkey = $(this).attr("rel");
+		$(".tabs_signupform").hide();
+		$("#" + relkey).fadeIn();
 	});
 
 	/* ----------------------------------------------------------- */

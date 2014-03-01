@@ -11,6 +11,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles-less.css" rel="stylesheet">
     <link href="css/styles-responsive.css" rel="stylesheet">
     <link href="css/effects.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -68,6 +69,213 @@
                 <div class="formContainer" id="signupForm">
                     <span class="closeForm"><img src="img/close.png" alt="Close" /></span>
                     <h3>Create an Account</h3>
+                    <div class="formWrapper">
+                        <form action="#" method="post">
+                            <div class="tabs_signupform" id="user_signupform">
+                                <ul class="breadcrumbs_signupform">
+                                    <li class="active"><span>User</span></li>
+                                    <li><span>Company</span></li>
+                                    <li><span>Application</span></li>
+                                    <li><span>Confirm</span></li>
+                                </ul>
+                                <div class="clear"></div><!-- clear -->
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <label>Account Type</label>
+                                        <input type="checkbox" name="rememberme" value="company" class="row-align"><span class="checkboxlabel">Company</span>
+                                        <input type="checkbox" name="rememberme" value="individual" class="row-align"><span class="checkboxlabel">Individual</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <label>Email Address</label>
+                                        <input type="email" name="emailaddress" placeholder="" />
+                                    </div><!-- span4 -->
+                                    <div class="span4">
+                                        <label>First Name</label>
+                                        <input type="text" name="fname" placeholder="" />
+                                        <label>Last Name</label>
+                                        <input type="text" name="lname" placeholder="" />
+                                    </div><!-- span4 -->
+                                    <div class="span4">
+                                        <label>Password</label>
+                                        <input type="password" name="password" placeholder="" />
+                                        <label>Re-Type Password</label>
+                                        <input type="password" name="retypepassword" placeholder="" />
+                                    </div><!-- span4 -->
+                                    <div class="clear"></div><!-- clear -->
+                                </div><!-- row-fluid -->
+                                <div class="buttonSection">
+                                    <button type="button" class="btn btn-primary pull-right btn-nextform" rel="company_signupform">Next</button> 
+                                    <div class="clear"></div><!-- clear -->
+                                </div><!-- buttonSection -->
+                            </div><!-- user_signupform -->
+
+                            <div class="tabs_signupform hide" id="company_signupform">
+                                <ul class="breadcrumbs_signupform">
+                                    <li><span class="btn-prevform" rel="user_signupform">User</span></li>
+                                    <li class="active"><span>Company</span></li>
+                                    <li><span>Application</span></li>
+                                    <li><span>Confirm</span></li>
+                                </ul>
+                                <div class="clear"></div><!-- clear -->
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <label>Company Name</label>
+                                        <input type="text" name="companyname" placeholder="" />
+                                        <label>Address</label>
+                                        <input type="text" name="companyaddress" placeholder="" />
+                                        <label>City</label>
+                                        <input type="text" name="city" placeholder="" />
+                                    </div><!-- span4 -->
+                                    <div class="span4">
+                                        <label>State/Province</label>
+                                        <input type="text" name="stateprovince" placeholder="" />
+                                        <label>Postal Code</label>
+                                        <input type="text" name="pcode" placeholder="" />
+                                        <label>Phone</label>
+                                        <input type="text" name="phone" placeholder="" />
+                                    </div><!-- span4 -->
+                                    <div class="span4">
+                                        <label>Website</label>
+                                        <input type="text" name="website" placeholder="" />
+                                        <label>Time Zone</label>
+                                        <select>
+                                            <option value="0">Time Zone 1</option>
+                                            <option value="1">Time Zone 2</option>
+                                            <option value="2">Time Zone 3</option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary pull-right btn-nextform" rel="application_signupform">Next</button>
+                                    <div class="clear"></div><!-- clear -->
+                                    </div><!-- span4 -->
+                                    <div class="clear"></div><!-- clear -->
+                                </div><!-- row-fluid -->
+                            </div><!-- company_signupform -->
+
+                            <div class="tabs_signupform hide" id="application_signupform">
+                                <ul class="breadcrumbs_signupform">
+                                    <li><span class="btn-prevform" rel="user_signupform">User</span></li>
+                                    <li><span class="btn-prevform" rel="company_signupform">Company</span></li>
+                                    <li class="active"><span>Application</span></li>
+                                    <li><span>Confirm</span></li>
+                                </ul>
+                                <div class="clear"></div><!-- clear -->
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <label><i class="fa fa-dollar"></i> Money Management</label>
+                                        <input type="checkbox" name="" /><span class="checkboxlabel">G-Book</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <label><i class="fa fa-user"></i> Contact Management</label>
+                                        <input type="checkbox" name="" /><span class="checkboxlabel">G-Contact</span>
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!-- span4 -->
+                                    <div class="span4">
+                                        <label><i class="fa fa-file-text"></i> Document Management</label>
+                                        <input type="checkbox" name="" /><span class="checkboxlabel">G-Doc</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <label><i class="fa fa-envelope"></i> Messaging</label>
+                                        <input type="checkbox" name="" /><span class="checkboxlabel">G-Message</span>
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!-- span4 -->
+                                    <div class="span4">
+                                        <label><i class="fa fa-clock-o"></i> Time Tracker</label>
+                                        <input type="checkbox" name="" /><span class="checkboxlabel">G-Time</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <label><i class="fa fa-plane"></i> Travel Logs</label>
+                                        <input type="checkbox" name="" /><span class="checkboxlabel">G-Travel</span>
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!-- span4 -->
+                                    <div class="clear"></div><!-- clear -->
+                                </div><!-- row-fluid -->
+                                <div class="buttonSection">
+                                    <button type="button" class="btn btn-primary pull-right btn-nextform" rel="confirm_signupform">Next</button>
+                                    <div class="clear"></div><!-- clear -->
+                                </div><!-- buttonSection -->
+                            </div><!-- tabs_signupform -->
+
+                            <div class="tabs_signupform hide" id="confirm_signupform">
+                                <ul class="breadcrumbs_signupform">
+                                    <li><span class="btn-prevform" rel="user_signupform">User</span></li>
+                                    <li><span class="btn-prevform" rel="company_signupform">Company</span></li>
+                                    <li><span class="btn-prevform" rel="application_signupform">Application</span></li>
+                                    <li class="active"><span>Confirm</span></li>
+                                </ul>
+                                <div class="clear"></div><!-- clear -->
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <label>Registered User</label>
+                                        <span class="infolabel">Name:</span>
+                                        <span class="infoData">Michael Millan</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infolabel">Email:</span>
+                                        <span class="infoData">micmillan2011@gmail.com</span>
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!-- span4 -->
+                                    <div class="span4">
+                                        <label>Business</label>
+                                        <span class="infolabel">Company:</span>
+                                        <span class="infoData">Company Name Here</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infolabel">Address:</span>
+                                        <span class="infoData">P. Rodriguez St.</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infolabel">City:</span>
+                                        <span class="infoData">Lapu-Lapu City</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infolabel">State/Province:</span>
+                                        <span class="infoData">Cebu City</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infolabel">Postal Code:</span>
+                                        <span class="infoData">2342342</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infolabel">Phone:</span>
+                                        <span class="infoData">123-1234-1234</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infolabel">Website:</span>
+                                        <span class="infoData">http://www.google.com</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infolabel">Time Zone:</span>
+                                        <span class="infoData">American/Chicago [UTC-06:00]</span>
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!-- span4 -->
+                                    <div class="span4">
+                                        <label>Applications</label>
+                                        <span class="infoData">G-Book</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infoData">G-Contact</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infoData">G-Doc</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infoData">G-Message</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infoData">G-Time</span>
+                                        <div class="clear"></div><!-- clear -->
+                                        <span class="infoData">G-Travel</span>
+                                        <div class="clear"></div><!-- clear -->
+                                    </div><!-- span4 -->
+                                    <div class="clear"></div><!-- clear -->
+                                </div><!-- row-fluid -->
+                                <div class="buttonSection">
+                                    <button type="button" class="btn btn-primary pull-right btn-nextform" rel="survey_signupform">Next</button>
+                                    <div class="clear"></div><!-- clear -->
+                                </div><!-- buttonSection -->
+                            </div><!-- tabs_signupform -->
+
+                            <div class="tabs_signupform hide" id="survey_signupform">
+                                <div class="sureyform_container">
+                                    <h4>You are almost done. Just one more thing!</h4>
+                                    <label>How did you hear about us?</label>
+                                    <select>
+                                        <option value="0">Select Option</option>
+                                        <option value="1">Option 01</option>
+                                        <option value="2">Option 02</option>
+                                        <option value="3">Option 03</option>
+                                    </select>
+                                </div><!-- surveyform_container -->
+                                <div class="buttonSection">
+                                    <button type="button" class="btn btn-primary pull-right">Finish</button><span class="pull-right">Click Finish to complete the sign up process.</span>
+                                    <div class="clear"></div><!-- clear -->
+                                </div><!-- buttonSection -->
+                            </div><!-- tabs_signupform -->
+                        </form>
+                    </div><!-- formwrapper -->
                 </div><!-- signupForm -->
             </div><!-- singuplogin-inner -->
         </div><!-- signuplogin -->
