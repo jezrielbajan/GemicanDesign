@@ -174,7 +174,7 @@ $(document).ready(function(){
 	/* ----------------------------------------------------------- */
 
     /* date pickers */
-    $("#bday_datepicker, #date_hired").datepicker();
+    $("#bday_datepicker, #date_hired, #time_approvalFrom, #time_approvalTo").datepicker();
 });
 
 

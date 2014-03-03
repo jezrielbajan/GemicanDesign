@@ -229,6 +229,18 @@
     #gtable-client_suppsearch.gtable .moreDetailsContainer {
       display: block;
     }
+
+    /*gtime - time entry */
+    #gtable-time_timeentry.gtable .gtable-cell.col6,
+    #gtable-time_timeentry.gtable .gtable-cell.col7 {
+      display: none;
+    }
+
+    #gtable-time_timeentry .moreDetailsContainer li.col6,
+    #gtable-time_timeentry .moreDetailsContainer li.col7,
+    #gtable-time_timeentry.gtable .moreDetailsContainer {
+      display: block;
+    }
   }
   @media only screen and (min-width: 480px) and (max-width: 599px){
     #screen3.responsiveInfo{
@@ -408,6 +420,20 @@
     #gtable-client_suppsearch .moreDetailsContainer li.col7,
     #gtable-client_suppsearch .moreDetailsContainer li.col9,
     #gtable-client_suppsearch.gtable .moreDetailsContainer {
+      display: block;
+    }
+
+    /*gtime - time entry */
+    #gtable-time_timeentry.gtable .gtable-cell.col5,
+    #gtable-time_timeentry.gtable .gtable-cell.col6,
+    #gtable-time_timeentry.gtable .gtable-cell.col7 {
+      display: none;
+    }
+
+    #gtable-time_timeentry .moreDetailsContainer li.col5,
+    #gtable-time_timeentry .moreDetailsContainer li.col6,
+    #gtable-time_timeentry .moreDetailsContainer li.col7,
+    #gtable-time_timeentry.gtable .moreDetailsContainer {
       display: block;
     }
   }
@@ -645,6 +671,36 @@
 
     .gtable-client_totalby .moreDetailsContainer li.col3,
     .gtable-client_totalby.gtable .moreDetailsContainer {
+      display: block;
+    }
+
+    /*gtime - quick clock*/
+    #gtable-time_quickclock.gtable .gtable-cell.col3,
+    #gtable-time_quickclock.gtable .gtable-cell.col4{
+      display: none;
+    }
+
+    #gtable-time_quickclock .moreDetailsContainer li.col3,
+    #gtable-time_quickclock .moreDetailsContainer li.col4,
+    #gtable-time_quickclock.gtable .moreDetailsContainer {
+      display: block;
+    }
+
+    /*gtime - time entry */
+    #gtable-time_timeentry.gtable .gtable-cell.col2,
+    #gtable-time_timeentry.gtable .gtable-cell.col3,
+    #gtable-time_timeentry.gtable .gtable-cell.col5,
+    #gtable-time_timeentry.gtable .gtable-cell.col6,
+    #gtable-time_timeentry.gtable .gtable-cell.col7 {
+      display: none;
+    }
+
+    #gtable-time_timeentry .moreDetailsContainer li.col2,
+    #gtable-time_timeentry .moreDetailsContainer li.col3,
+    #gtable-time_timeentry .moreDetailsContainer li.col5,
+    #gtable-time_timeentry .moreDetailsContainer li.col6,
+    #gtable-time_timeentry .moreDetailsContainer li.col7,
+    #gtable-time_timeentry.gtable .moreDetailsContainer {
       display: block;
     }
   }
@@ -896,6 +952,36 @@
     .gtable-client_bycattype .moreDetailsContainer li.col4,
     .gtable-client_bycattype .moreDetailsContainer li.col5,
     .gtable-client_bycattype.gtable .moreDetailsContainer {
+      display: block;
+    }
+
+    /*gtime - quick clock*/
+    #gtable-time_quickclock.gtable .gtable-cell.col3,
+    #gtable-time_quickclock.gtable .gtable-cell.col4{
+      display: none;
+    }
+
+    #gtable-time_quickclock .moreDetailsContainer li.col3,
+    #gtable-time_quickclock .moreDetailsContainer li.col4,
+    #gtable-time_quickclock.gtable .moreDetailsContainer {
+      display: block;
+    }
+
+    /*gtime - time entry */
+    #gtable-time_timeentry.gtable .gtable-cell.col2,
+    #gtable-time_timeentry.gtable .gtable-cell.col3,
+    #gtable-time_timeentry.gtable .gtable-cell.col5,
+    #gtable-time_timeentry.gtable .gtable-cell.col6,
+    #gtable-time_timeentry.gtable .gtable-cell.col7 {
+      display: none;
+    }
+
+    #gtable-time_timeentry .moreDetailsContainer li.col2,
+    #gtable-time_timeentry .moreDetailsContainer li.col3,
+    #gtable-time_timeentry .moreDetailsContainer li.col5,
+    #gtable-time_timeentry .moreDetailsContainer li.col6,
+    #gtable-time_timeentry .moreDetailsContainer li.col7,
+    #gtable-time_timeentry.gtable .moreDetailsContainer {
       display: block;
     }
   }
